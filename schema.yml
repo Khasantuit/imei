@@ -956,7 +956,7 @@ components:
           allOf:
           - $ref: '#/components/schemas/Unvon'
           readOnly: true
-        ishjoylari:
+        lavozim:
           type: array
           items:
             $ref: '#/components/schemas/Boshqarma'
@@ -965,7 +965,7 @@ components:
       - bolim
       - boshqarma
       - id
-      - ishjoylari
+      - lavozim
       - jton
       - phone_number
       - unvon
@@ -1182,7 +1182,7 @@ components:
           allOf:
           - $ref: '#/components/schemas/Unvon'
           readOnly: true
-        ishjoylari:
+        lavozim:
           type: array
           items:
             $ref: '#/components/schemas/Boshqarma'
@@ -1244,7 +1244,7 @@ components:
           allOf:
           - $ref: '#/components/schemas/Unvon'
           readOnly: true
-        ishjoylari:
+        lavozim:
           type: array
           items:
             $ref: '#/components/schemas/Boshqarma'
@@ -1283,7 +1283,7 @@ components:
           allOf:
           - $ref: '#/components/schemas/Unvon'
           readOnly: true
-        ishjoylari:
+        lavozim:
           type: array
           items:
             $ref: '#/components/schemas/Boshqarma'
@@ -1292,7 +1292,7 @@ components:
       - bolim
       - boshqarma
       - id
-      - ishjoylari
+      - lavozim
       - jton
       - phone_number
       - unvon

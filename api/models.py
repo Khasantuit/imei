@@ -55,8 +55,8 @@ class Boshqarma(BaseModel, models.Model):
 
 
 class Bolim(BaseModel, models.Model):
-    name = models.CharField(max_length=255)
-    bolim = models.ForeignKey(Boshqarma, on_delete=models.CASCADE)
+    name = models.CharField(max_length=255) 
+    # bolim = models.ForeignKey(Boshqarma, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -77,7 +77,8 @@ class CustomUser(BaseModel, AbstractUser):
     father_name = models.CharField(max_length=50, blank=True, null=True)
     phone_number = models.CharField(max_length=13, unique=True)
     jton = models.CharField(max_length=8, unique=True)
-    ishjoylari = models.ManyToManyField(Boshqarma, related_name='ishjoylari', blank=True)
+    lavozim = models.CharField(max_length=100, blank=True, null=True)
+    #lavozim = models.ManyToManyField(Boshqarma, related_name='lavozim', blank=True)
 
     def __str__(self):
         return f"{self.username}: {self.first_name} {self.last_name}"

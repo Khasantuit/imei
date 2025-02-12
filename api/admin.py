@@ -18,13 +18,13 @@ class CustomUserAdmin(UserAdmin):  # Correct inheritance
     list_display = ('id', 'phone_number', 'jton', 'first_name', 'last_name', 'father_name',)
     list_display_links = ('id', 'phone_number')
     search_fields = ('phone_number', 'jton', 'first_name', 'last_name')
-    list_filter = ('ishjoylari',)
+    list_filter = ('lavozim',)
     fieldsets = (
         ("Auth Info", {'fields': ('username', 'password')}),
         ('Personal Info', {'fields': ('first_name', 'last_name', 'father_name', 'phone_number', 'jton')}),
         ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
         ('Important Dates', {'fields': ('last_login', 'date_joined')}),
-        ('Work Info', {'fields': ('boshqarma', 'bolim', 'unvon', 'ishjoylari')}),
+        ('Work Info', {'fields': ('boshqarma', 'bolim', 'unvon', 'lavozim')}),
     )
 
 
